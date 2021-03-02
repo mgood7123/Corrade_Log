@@ -73,38 +73,18 @@ CMAKE_BINARY_DIR = /Users/smallville7123/Desktop/CircularBuffer/app/src/main/cpp
 
 # The main recursive "all" target.
 all: CMakeFiles/Corrade_Log.dir/all
-all: testBuilder/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: testBuilder/preinstall
+preinstall:
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Corrade_Log.dir/clean
-clean: testBuilder/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory testBuilder
-
-# Recursive "all" directory target.
-testBuilder/all:
-
-.PHONY : testBuilder/all
-
-# Recursive "preinstall" directory target.
-testBuilder/preinstall:
-
-.PHONY : testBuilder/preinstall
-
-# Recursive "clean" directory target.
-testBuilder/clean:
-
-.PHONY : testBuilder/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Corrade_Log.dir

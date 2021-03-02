@@ -7,21 +7,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(Corrade_Log_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/include PARENT_SCOPE)
 
-if(NOT COMMAND testBuilder_build)
-    add_subdirectory(testBuilder)
-    testBuilder_set_current_working_directory_to_default_binary_directory()
-endif()
-
 include_directories(include)
 
-testBuilder_add_source(Corrade_Log src/Corrade_AndroidLogStreamBuffer.cpp)
-testBuilder_add_source(Corrade_Log src/Corrade_Debug.cpp)
-testBuilder_add_source(Corrade_Log src/Corrade_String.cpp)
-testBuilder_add_source(Corrade_Log src/Corrade_StringView.cpp)
+add_library(Corrade_Log SHARED
+        src/Corrade_AndroidLogStreamBuffer.cpp
+        src/Corrade_Debug.cpp
+        src/Corrade_String.cpp
+        src/Corrade_StringView.cpp
+)
 
 if (ANDROID)
-    testBuilder_add_library(Corrade_Log android)
-    testBuilder_add_library(Corrade_Log log)
+    target_link_libraries(Corrade_Log android log)
+else()
+    target_link_libraries(Corrade_Log)
 endif()
-
-testBuilder_build_shared_library(Corrade_Log)
