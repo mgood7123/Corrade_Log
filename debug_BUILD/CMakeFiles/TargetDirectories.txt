@@ -1,0 +1,5 @@
+/Users/smallville7123/Desktop/CircularBuffer/app/src/main/cpp/CircularBuffer/Corrade_Log/Log/debug_BUILD/CMakeFiles/rebuild_cache.dir
+/Users/smallville7123/Desktop/CircularBuffer/app/src/main/cpp/CircularBuffer/Corrade_Log/Log/debug_BUILD/CMakeFiles/edit_cache.dir
+/Users/smallville7123/Desktop/CircularBuffer/app/src/main/cpp/CircularBuffer/Corrade_Log/Log/debug_BUILD/CMakeFiles/Corrade_Log.dir
+/Users/smallville7123/Desktop/CircularBuffer/app/src/main/cpp/CircularBuffer/Corrade_Log/Log/debug_BUILD/testBuilder/CMakeFiles/rebuild_cache.dir
+/Users/smallville7123/Desktop/CircularBuffer/app/src/main/cpp/CircularBuffer/Corrade_Log/Log/debug_BUILD/testBuilder/CMakeFiles/edit_cache.dir
